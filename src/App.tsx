@@ -8,7 +8,9 @@ const App = (): JSX.Element => {
             <header className="App-header">
                 <img src={bo} className="App-logo" alt="logo" />
                 <p>aanes.dev</p>
-                <a href="https://github.com/boaanes">GitHub</a>
+                <a href="https://github.com/boaanes" className="App-link">
+                    GitHub
+                </a>
             </header>
         </div>
     );
