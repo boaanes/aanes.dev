@@ -10,6 +10,14 @@ const theme = extendTheme({
         heading: 'Roboto',
         body: 'Nunito',
     },
+    styles: {
+        global: ({ colorMode }) => ({
+            body: {
+                color: 'white',
+                bg: 'gray.800',
+            },
+        }),
+    },
     config,
 });
 
