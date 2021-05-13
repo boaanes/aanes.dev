@@ -38,7 +38,7 @@ const App = (): JSX.Element => {
                         alt="me"
                     />
                     <Text mt={5}>Bo Aanes</Text>
-                    <HStack>
+                    <HStack color="gray.300">
                         <IconLink href="https://github.com/boaanes" icon={<GitHub />} />
                         <IconLink href="https://www.linkedin.com/in/bo-aanes-946566182/" icon={<Linkedin />} />
                         <IconLink href="mailto:boaanes@gmail.com" icon={<Mail />} />
