@@ -1,7 +1,8 @@
 import React from 'react';
 import bo from './bo.png';
-import { Box, Flex, Image, Text, keyframes, usePrefersReducedMotion } from '@chakra-ui/react';
-import theme from './theme';
+import { Box, Flex, Image, Text, keyframes, usePrefersReducedMotion, HStack } from '@chakra-ui/react';
+import { GitHub, Linkedin, Mail } from 'react-feather';
+import IconLink from './IconLink';
 
 const spin = keyframes`
     from {
@@ -36,7 +37,12 @@ const App = (): JSX.Element => {
                         borderRadius="100%"
                         alt="me"
                     />
-                    <Text mt={5}>aanes.dev</Text>
+                    <Text mt={5}>Bo Aanes</Text>
+                    <HStack>
+                        <IconLink href="https://github.com/boaanes" icon={<GitHub />} />
+                        <IconLink href="https://www.linkedin.com/in/bo-aanes-946566182/" icon={<Linkedin />} />
+                        <IconLink href="mailto:boaanes@gmail.com" icon={<Mail />} />
+                    </HStack>
                 </Flex>
             </Box>
         </>
