@@ -1,6 +1,7 @@
 import React from 'react';
 import bo from './bo.png';
-import { Box, ChakraProvider, Flex, Image, Text, keyframes, usePrefersReducedMotion, Link } from '@chakra-ui/react';
+import { Box, Flex, Image, Text, keyframes, usePrefersReducedMotion } from '@chakra-ui/react';
+import theme from './theme';
 
 const spin = keyframes`
     from {
@@ -16,16 +17,16 @@ const App = (): JSX.Element => {
     const animation = prefersReducedMotion ? undefined : `${spin} infinite 20s linear`;
 
     return (
-        <ChakraProvider>
+        <>
             <Box textAlign="center">
                 <Flex
-                    bg="#282c34"
+                    bg="gray.800"
+                    color="white"
                     minH="100vh"
                     flexDir="column"
                     alignItems="center"
                     justifyContent="center"
                     fontSize="calc(10px + 2vmin)"
-                    color="white"
                 >
                     <Image
                         src={bo}
@@ -36,12 +37,9 @@ const App = (): JSX.Element => {
                         alt="me"
                     />
                     <Text mt={5}>aanes.dev</Text>
-                    <Link href="https://github.com/boaanes" color="#61dafb" isExternal>
-                        GitHub
-                    </Link>
                 </Flex>
             </Box>
-        </ChakraProvider>
+        </>
     );
 };
 
