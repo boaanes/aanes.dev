@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, useBreakpointValue } from '@chakra-ui/react';
 
-const IconLink = ({ href, icon }: { href: string; icon: JSX.Element }) => {
+const IconLink = ({ href, icon }: { href: string; icon: JSX.Element }): JSX.Element => {
     const iconSize = useBreakpointValue([48, 36, 24]);
 
     return (
