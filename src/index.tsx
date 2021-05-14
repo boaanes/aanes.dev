@@ -1,8 +1,8 @@
 import { ChakraProvider, ColorModeScript } from '@chakra-ui/react';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
-import Fonts from './Fonts';
+import App from './components/App';
+import Fonts from './components/Fonts';
 import reportWebVitals from './reportWebVitals';
 import theme from './theme';
 
