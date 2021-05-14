@@ -4,6 +4,7 @@ import { Box, Flex, Image, Text, keyframes, usePrefersReducedMotion, HStack } fr
 import { GitHub, Linkedin, Mail } from 'react-feather';
 import IconLink from './IconLink';
 import Footer from './Footer';
+import ColorModeButton from './ColorModeButton';
 
 const spin = keyframes`
     from {
@@ -21,14 +22,8 @@ const App = (): JSX.Element => {
     return (
         <>
             <Box pos="relative" minHeight="100vh">
-                <Flex
-                    pt="20vh"
-                    color="white"
-                    flexDir="column"
-                    alignItems="center"
-                    justifyContent="center"
-                    textAlign="center"
-                >
+                <ColorModeButton />
+                <Flex pt="20vh" flexDir="column" alignItems="center" justifyContent="center" textAlign="center">
                     <Box borderRadius="100%" boxShadow="md">
                         <Image
                             src={bo}
@@ -42,7 +37,7 @@ const App = (): JSX.Element => {
                     <Text fontSize="3xl" mt={5}>
                         Bo Aanes
                     </Text>
-                    <HStack color="gray.300">
+                    <HStack>
                         <IconLink href="https://github.com/boaanes" icon={<GitHub />} />
                         <IconLink href="https://www.linkedin.com/in/bo-aanes-946566182/" icon={<Linkedin />} />
                         <IconLink href="mailto:boaanes@gmail.com" icon={<Mail />} />
