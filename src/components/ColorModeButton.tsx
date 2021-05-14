@@ -14,7 +14,7 @@ const ColorModeButton = (): JSX.Element => {
             </Box>
             <Switch
                 size="lg"
-                defaultChecked={colorMode === 'light' ? false : true}
+                isChecked={colorMode === 'light' ? false : true}
                 onChange={(event: ChangeEvent<HTMLInputElement>) => {
                     if (event.target.checked && colorMode === 'light') toggleColorMode();
                     else if (!event.target.checked && colorMode === 'dark') toggleColorMode();
