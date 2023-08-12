@@ -1,5 +1,5 @@
 import React from 'react';
-import bo from '../assets/bo.png';
+import bo from '../assets/1747.png';
 import { Box, Flex, Image, Text, keyframes, usePrefersReducedMotion, HStack } from '@chakra-ui/react';
 import { GitHub, Linkedin, Mail } from 'react-feather';
 import IconLink from './IconLink';
